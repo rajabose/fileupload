@@ -1,0 +1,19 @@
+user: 
+  - name: 'username'
+    role:
+      - admin
+      - merchant
+invoice:
+  - id : 'id'
+    name: 'name'
+    description: 'description'
+    status:
+      - onhold
+      - digitized
+      - processing
+invoicefiles:
+    files:
+      - name
+      - file_type
+      - invoice_id
+      - location
