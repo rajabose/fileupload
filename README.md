@@ -5,20 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby versions
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Command to Run - rails s -e development
 
-* Database initialization
+* Instead of database, I used in memory array to make all crud operations to create, search, update.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*  API end points are following
+   *  PUT   /invoices/:id/import -- Update some information of invoice by merchant.
+   *  GET   /invoices  -- To get list of invoices merchant has uploaded
+   *  POST  /invoices  --- Upload inovice by merchant.
+   *  GET   /invoices/:id -- View invoice inforamtion uploaded by merchant to merchant
+   *  GET   /admin/invoices      -- To get list of invoices dashboard
+   *  GET  /admin/invoices/:id   -- To get invoice details of invoice
+   *  PUT  /admin/invoices/:id   -- To update invoice infomation for internal team. they can change the status of invoices.
